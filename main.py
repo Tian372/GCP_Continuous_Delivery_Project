@@ -9,7 +9,15 @@ def hello():
     """Return a friendly HTTP greeting."""
     return 'Hello World!'
 
-
+@app.route('/html')
+def html():
+    """Returns some custom HTML"""
+    return """
+    <title>This is a Hello World World Page</title>
+    <p>Hello</p>
+    <p><b>World</b></p>
+    """
+    
 @app.route('/newroute/<name>')
 def newroute(name):
     """parameter"""
