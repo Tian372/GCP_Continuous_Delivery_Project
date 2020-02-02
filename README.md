@@ -1,4 +1,4 @@
-# gcp-flask-delivery
+# GCP Flask Delivery
 ## Project 1 for ECE 590, Cloud Analytics at Scale in the Cloud.
 ### Project Title: Continuous Delivery of Flask Application on GCP
 
