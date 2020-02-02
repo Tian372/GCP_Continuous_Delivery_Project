@@ -9,20 +9,22 @@ def hello():
     """Return a friendly HTTP greeting."""
     return 'Hello World!'
 
-@app.route('/html')
-def html():
-    """Returns some custom HTML"""
-    return """
-    <title>This is a Hello World World Page</title>
-    <p>Hello</p>
-    <p><b>World</b></p>
-    """
-    
+
 @app.route('/newroute/<name>')
 def newroute(name):
     """parameter"""
     return "this was passed in: %s" % name
 
+@app.route('/html')
+def html():
+    """Returns some custom HTML"""
+    return """
+    <title>This is a Hello World World Page</title>
+    <p>Continuous Delivery</p>
+    <p><b>DONE</b></p>
+    
+    """
+    
 
 @app.errorhandler(500)
 def server_error(e):
